@@ -17,8 +17,10 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files`.split("\n")
   s.test_files  = `git ls-files -- spec/*`.split("\n")
 
-  s.add_dependency 'rails', '~> 5.0'
-  s.add_dependency 'devise', '~> 3.5'
+  s.required_ruby_version = ">= 2.1.0"
+  
+#   s.add_dependency 'rails', '~> 5.0'
+  s.add_dependency 'devise', '~> 4.2.0'
   s.add_dependency 'paperclip', '~> 4.3'
   s.add_dependency 'redcarpet', '~> 3.3'
   s.add_dependency 'bootstrap-sass', '~> 3.3'
